@@ -92,7 +92,7 @@ def evaluate(sentence):
         top_3_index = tf.math.top_k(predictions[0], k=3).indices.numpy()
         for index in top_3_index:
             if index not in invaild_id:
-                predicted_id = top_3_index[index]
+                predicted_id = index
                 break
 
         result += vocab[predicted_id] + ' '
