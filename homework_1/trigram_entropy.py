@@ -36,7 +36,7 @@ def get_word_tokens():
 
     r1 = '(([a-zA-Z0-9]+)\.)*([a-zA-Z0-9]+)'  # 正则表达式
     for file_name in file_list:
-        full_file_name = 'jyxstxtqj_downcc/' + file_name + '.txt'
+        full_file_name = 'jyxstxtqj_downcc2/' + file_name + '.txt'
         with open(file=full_file_name, mode='r', encoding='gb18030') as file_obj:
             for line in file_obj:
                 if line != '\n':
